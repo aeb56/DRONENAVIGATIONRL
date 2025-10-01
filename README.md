@@ -5,7 +5,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-3776ab.svg?logo=python&logoColor=white)](https://python.org)
 [![License](https://img.shields.io/badge/License-Academic-green.svg)](LICENSE)
 
-> **INM363 Individual Project - City, University of London**  
+> **INM363 Individual Project - City St George's University of London**  
 > Advanced reinforcement learning system for autonomous drone navigation in complex 3D environments with dynamic obstacles and curriculum learning.
 
 ## 📋 Table of Contents
@@ -276,11 +276,11 @@ This work builds upon:
 
 ## 📄 License
 
-This project is developed for academic purposes as part of the INM363 Individual Project at City, University of London. All rights reserved for educational and research use.
+This project is developed for academic purposes as part of the INM363 Individual Project at City St George's University of London. All rights reserved for educational and research use.
 
 ## 🙏 Acknowledgments
 
-- **City, University of London** - Academic supervision and resources
+- **City St George's University of London** - Academic supervision and resources
 - **Unity Technologies** - ML-Agents framework and documentation
 - **OpenAI** - PPO algorithm and research insights
 - **Research Community** - Open-source tools and methodologies
@@ -289,7 +289,7 @@ This project is developed for academic purposes as part of the INM363 Individual
 
 **Student**: Abel Emanuel Bancu  
 **Course**: INM363 Individual Project  
-**Institution**: City, University of London  
+**Institution**: City St George's University of London  
 **Year**: 2024/2025
 
 ---
