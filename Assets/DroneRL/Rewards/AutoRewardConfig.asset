@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66c68eaf4902442f96db65251423897a, type: 3}
+  m_Name: AutoRewardConfig
+  m_EditorClassIdentifier: 
+  aliveBonusPerStep: 0.002
+  distanceRewardScale: 0.07
+  goalReachedBonus: 2
+  stabilityRewardScale: 0.005
+  altitudeTarget: 3
+  altitudeTolerance: 1
+  stabilityShapingEpisodes: 900
+  crashPenalty: 1.5
+  outOfBoundsPenalty: 1
+  timeoutPenalty: 0.2
+  energyPenaltyScale: 0.0015
+  tiltPenaltyScale: 0.001
+  idlePenalty: 0.0075
+  idleTimeout: 3
+  goalRadius: 1

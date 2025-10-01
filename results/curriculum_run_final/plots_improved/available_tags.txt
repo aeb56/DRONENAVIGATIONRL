@@ -1,0 +1,76 @@
+Drone/Collisions
+Drone/EpisodeLength
+Drone/MinDistance
+Drone/Success
+Environment/Cumulative Reward
+Environment/Episode Length
+Environment/Lesson Number/stage
+Losses/Policy Loss
+Losses/Value Loss
+Policy/Beta
+Policy/Entropy
+Policy/Epsilon
+Policy/Extrinsic Reward
+Policy/Extrinsic Value Estimate
+Policy/Learning Rate
+Stage/0/AgentCrashes
+Stage/0/CollisionRate
+Stage/0/Episodes
+Stage/0/ObstacleCrashes
+Stage/0/SuccessRate
+Stage/0/Timeouts
+Stage/1/AgentCrashes
+Stage/1/CollisionRate
+Stage/1/Episodes
+Stage/1/ObstacleCrashes
+Stage/1/SuccessRate
+Stage/1/Timeouts
+Stage/2/AgentCrashes
+Stage/2/CollisionRate
+Stage/2/Episodes
+Stage/2/ObstacleCrashes
+Stage/2/SuccessRate
+Stage/2/Timeouts
+Stage/3/AgentCrashes
+Stage/3/CollisionRate
+Stage/3/Episodes
+Stage/3/ObstacleCrashes
+Stage/3/SuccessRate
+Stage/3/Timeouts
+Stage/4/AgentCrashes
+Stage/4/CollisionRate
+Stage/4/Episodes
+Stage/4/ObstacleCrashes
+Stage/4/SuccessRate
+Stage/4/Timeouts
+Stage/5/AgentCrashes
+Stage/5/CollisionRate
+Stage/5/Episodes
+Stage/5/ObstacleCrashes
+Stage/5/SuccessRate
+Stage/5/Timeouts
+Stage/6/AgentCrashes
+Stage/6/CollisionRate
+Stage/6/Episodes
+Stage/6/ObstacleCrashes
+Stage/6/SuccessRate
+Stage/6/Timeouts
+Stage/7/AgentCrashes
+Stage/7/CollisionRate
+Stage/7/Episodes
+Stage/7/ObstacleCrashes
+Stage/7/SuccessRate
+Stage/7/Timeouts
+Stage/8/AgentCrashes
+Stage/8/CollisionRate
+Stage/8/Episodes
+Stage/8/ObstacleCrashes
+Stage/8/SuccessRate
+Stage/8/Timeouts
+Stage/9/AgentCrashes
+Stage/9/CollisionRate
+Stage/9/Episodes
+Stage/9/ObstacleCrashes
+Stage/9/SuccessRate
+Stage/9/Timeouts
+Stage/Current

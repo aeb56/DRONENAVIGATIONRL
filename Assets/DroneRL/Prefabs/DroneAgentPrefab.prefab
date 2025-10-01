@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3826536849868107427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2289882745565412735}
+  - component: {fileID: 7742883667160643024}
+  - component: {fileID: 6002042266377901495}
+  - component: {fileID: 6095121482441286086}
+  - component: {fileID: 7550938105721838320}
+  - component: {fileID: 4410205878209296720}
+  - component: {fileID: 1876657227816083346}
+  - component: {fileID: 5543270166625765171}
+  m_Layer: 0
+  m_Name: DroneAgentPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2289882745565412735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &7742883667160643024
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  serializedVersion: 4
+  m_Mass: 1.2
+  m_Drag: 0.05
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &6002042266377901495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4c16912f426428ebf2ab8d9fe5074b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrustToWeight: 2.2
+  motorTimeConstant: 0.12
+  maxTiltDegrees: 35
+  yawRate: 120
+  kAttP: 8
+  kAttD: 0.4
+  kAttI: 0.2
+  iLimit: 0.6
+  bodyDrag: {x: 0.4, y: 0.8, z: 0.4}
+  angularDamping: 0.3
+  lateralDamping: 0.15
+  groundEffectHeight: 2
+  groundEffectGain: 0.15
+  sensorNoise: 0.02
+  windSusceptibility: 1
+  motorEfficiency: {x: 1, y: 0.98, z: 1.02, w: 0.99}
+  batteryLevel: 1
+  throttle: 0.5
+  pitch: 0
+  roll: 0
+  yaw: 0
+--- !u!114 &6095121482441286086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5026baf71b9849eb950b61d342c78efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxTiltCmd: 1
+  maxYawCmd: 1
+  throttleRange01: {x: 0, y: 1}
+--- !u!114 &7550938105721838320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 67
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 4
+      BranchSizes: 
+    VectorActionSize: 04000000
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 1
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: DroneAgent
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
+--- !u!114 &4410205878209296720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a325f84cc89496395d3a6f2a2aa1f3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  goal: {fileID: 0}
+  env: {fileID: 0}
+  rewardConfig: {fileID: 0}
+  useRaycasts: 1
+  rayCount: 8
+  rayDistance: 15
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ignoreSelfColliders: 1
+  includeAgentsInRaycasts: 1
+  rayOriginUpOffset: 0.05
+  velocityNoise: 0.1
+  gyroNoise: 0.05
+  positionNoise: 0.3
+  attitudeNoise: 1
+  logObservationSizeMismatch: 1
+  successRadius: 1.5
+  successHoldSteps: 10
+  maxStallSteps: 150
+--- !u!114 &1876657227816083346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e119e5be47e7a6c49bb99befa9735820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontCamera: {fileID: 0}
+  downwardCamera: {fileID: 0}
+  cameraResolution: 128
+  useRGBCamera: 1
+  useDepthCamera: 1
+  renderSensorCameras: 0
+  hideSensorCamerasInHierarchy: 1
+  useLiDAR: 1
+  lidarRays: 16
+  lidarRange: 20
+  lidarNoiseStdDev: 0.05
+  useIMU: 1
+  useGPS: 1
+  useMagnetometer: 1
+  useBarometer: 1
+  useWindSensor: 1
+  useProximityWarning: 1
+  proximityRange: 2
+  detectionMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ignoreSelfColliders: 1
+  includeAgentsInSensors: 1
+  rayOriginUpOffset: 0.05
+  useExtendedKalmanFilter: 0
+  sensorFusionRate: 50
+--- !u!114 &5543270166625765171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3826536849868107427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17c338d548639c14db1769e671a3e7a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentMode: 0
+  useAStar: 1
+  useDynamicReplanning: 1
+  replanningInterval: 2
+  maxPathNodes: 100
+  waypoints: []
+  waypointTolerance: 2
+  loopWaypoints: 0
+  avoidMovingObstacles: 1
+  predictionHorizon: 3
+  dynamicObstacleMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  enableFailsafes: 1
+  emergencyLandingZone: {fileID: 0}
+  lowBatteryThreshold: 0.2
+  maxWindSpeed: 10
+  isFormationLeader: 0
+  followers: []
+  formationOffset: {x: 0, y: 0, z: 0}

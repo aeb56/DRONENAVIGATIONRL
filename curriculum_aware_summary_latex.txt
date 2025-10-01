@@ -1,0 +1,20 @@
+% Curriculum-aware LaTeX table for dissertation
+\begin{table}[htbp]
+\centering
+\caption{Final Performance Metrics by Highest Curriculum Stage Achieved}
+\label{tab:curriculum_final_performance}
+\begin{tabular}{lcccc}
+\toprule
+Metric & Mean ± Std & 95\% CI & Stage & Description \\
+\midrule
+Success Rate & 95.9% ± 0.0% & [95.7%, 96.2%] & 8 & Stage 8 \\
+Collision Rate & 3.4% ± 0.0% & [3.2%, 3.5%] & 8 & Stage 8 \\
+Cumulative Reward & 23.09 ± 0.00 & [23.01, 23.16] & 8 & Stage 8 \\
+Episode Length & 47.91 ± 0.00 & [47.69, 48.16] & 8 & Stage 8 \\
+Min Distance to Goal & 1.30 ± 0.00 & [1.23, 1.37] & 8 & Stage 8 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Note: Performance measured at convergence within each curriculum stage
+% CI calculated using bootstrap sampling to account for training variability

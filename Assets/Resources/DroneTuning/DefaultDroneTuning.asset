@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f0e496031ed05846bbd2bb0bac0a3f3, type: 3}
+  m_Name: DefaultDroneTuning
+  m_EditorClassIdentifier: 
+  mass: 0.25
+  motorThrustCoefficient: 1.5
+  motorTimeConstant: 0.09
+  armLength: 0.145
+  yawTorqueCoefficient: 0.02
+  bodyDragCd: {x: 0.12, y: 0.18, z: 0.1}
+  angularDamping: {x: 0.02, y: 0.02, z: 0.02}
+  groundEffectHeight: 0.3
+  groundEffectMaxBoost: 0.12
+  baseWind: {x: 0, y: 0, z: 0}
+  gustStrength: 1.5
+  gustFrequency: 0.1
+  windEnabled: 0
+  Kp_pos: 1.6
+  Ki_pos: 0.05
+  Kd_pos: 0.1
+  posILimit: 1
+  maxPosVelCmdCine: 5
+  maxPosVelCmdNormal: 12
+  maxPosVelCmdSport: 18
+  Kp_vel: 2.6
+  Ki_vel: 0.2
+  Kd_vel: 0.4
+  velILimit: 2
+  Kp_att: 8
+  Kd_att: 0.2
+  Kp_rate: 0.25
+  Ki_rate: 0.08
+  Kd_rate: 0.005
+  rateILimit: 0.4
+  maxTiltCine: 10
+  maxTiltNormal: 25
+  maxTiltSport: 35
+  maxYawRateCine: 60
+  maxYawRateNormal: 120
+  maxYawRateSport: 200
+  maxClimbCine: 2
+  maxClimbNormal: 4
+  maxClimbSport: 4
+  inputExpo: 0.3
+  cineInputSlew: 2
+  normalInputSlew: 4
+  sportInputSlew: 6
+  hoverThrottleGuess: 0.55
+  sensorNoiseEnabled: 0
+  sensorLatencyEnabled: 0
+  AbsoluteTiltHardLimitDeg: 45

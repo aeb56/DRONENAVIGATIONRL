@@ -1,0 +1,18 @@
+{
+    "droneCount": 6,
+    "arenaSize": {
+        "x": 80.0,
+        "y": 80.0
+    },
+    "ceilingHeight": 25.0,
+    "obstacleCount": 15,
+    "movingObstacleCount": 3,
+    "aerialObstacleCount": 4,
+    "enableWind": true,
+    "enableVisionPolicy": false,
+    "enableDomainRandomization": true,
+    "sharedGroupRewards": false,
+    "decisionHz": 10.0,
+    "rewardConfigPath": "Assets/DroneRL/Rewards/OptimizedRewardConfig.asset",
+    "createdUtc": "2025-09-15T22:24:32.2700203Z"
+}
