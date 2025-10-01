@@ -287,7 +287,7 @@ This project is developed for academic purposes as part of the INM363 Individual
 
 ## 📞 Contact
 
-**Student**: [Your Name]  
+**Student**: Abel Emanuel Bancu  
 **Course**: INM363 Individual Project  
 **Institution**: City, University of London  
 **Year**: 2024/2025
